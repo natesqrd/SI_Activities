@@ -138,3 +138,25 @@ int main()
 
     return 0;
 }
+
+
+<iostream>
+
+main{
+    cout "Hello World";
+    cin >> name;
+    string name;
+    char firstLetter = name;
+    if(firstLetter == c)
+    {
+        cout << "I like that letter " << firstLetter << endl;
+    }
+    else
+    {
+        cout << 44+=firstLetter << endl;
+    }
+
+        int = 5;
+        int h = 13.4;
+        int g = h * int;
+}
