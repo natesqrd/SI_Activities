@@ -88,3 +88,53 @@ int main() {
     }
     return 0;
 }
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //This is a demonstrantion on the use of the Switch Statement
+    //First thing to know is that the Switch does NOT accept non primitive types
+    //This means that string can not be used. Leaving only int, double, char, long, float and short.
+    string str = "Hello";
+    switch(str) //Here in xCode the error -Statement requires expression of integer type- pops up
+    {
+        case "Hello":
+            break;
+        default:
+            break;
+    }
+
+    char ch = 'a';
+    switch(ch)
+    {
+        case 'a':
+            cout << "Hello\n";
+            break;
+        default:
+            break;
+    }//Since ch = 'a' the first case will execute
+    //remember the layout
+    /*
+     switch(var)
+     {
+        case 1:
+            do something;
+            break;
+        case 2:
+            do something else;
+            break;
+     ....
+        default:
+            the default thing to do;
+            break;
+     }
+     There are cases, code and break. At the end there is a default with more code and a break.
+     */
+
+    return 0;
+}
