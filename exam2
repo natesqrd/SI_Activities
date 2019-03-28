@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void q1()
+{
+    /*
+     use a for loop to return the average of the numbers
+     entered from the user
+     */
+    
+}
+void q2()
+{
+    /*
+     using a while loop, remove all spaces from a string from a the user and return the new string to the user
+     */
+}
+void q3()
+{
+    /*
+     using a do-while loop, take in names from the user until 'x' is inputed and return the last letter of each name comma seperated
+     */
+}
+int main()
+{
+    q1();
+    q2();
+    q3();
+    return 0;
+}
