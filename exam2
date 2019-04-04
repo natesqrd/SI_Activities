@@ -9,19 +9,49 @@ void q1()
      use a for loop to return the average of the numbers
      entered from the user
      */
-    
+    int input, n, p = 0;
+    double averages = 0;
+    cout << "How many numbers would you like to enter?\n";
+    cin >> n;
+    for(int i = 0; i < n; i++)
+    {
+        cout << "Enter number\n";
+        cin >> input;
+        p += input;
+    }
+    averages = p/n;
+    cout << averages << endl;
 }
 void q2()
 {
     /*
      using a while loop, remove all spaces from a string from a the user and return the new string to the user
      */
+    string input, edit;
+    int i = 0;
+    cout << "Enter\n";
+    getline(cin, input);
+    while(i < input.length())
+    {
+        if(input.at(i) != ' ')
+            edit += input.at(i);
+        i++;
+    }
+    cout << edit << endl;
 }
 void q3()
 {
     /*
      using a do-while loop, take in names from the user until 'x' is inputed and return the last letter of each name comma seperated
      */
+    string input, edit;
+    do{
+        cout << "Enter\n";
+        getline(cin, input);
+        if(input != "x")
+            edit = edit + input.at(input.length() - 1) + ", ";
+    }while(input != "x");
+    cout << edit << endl;
 }
 int main()
 {
