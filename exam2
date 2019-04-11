@@ -1,62 +1,29 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
+//What is an array?
 
-void q1()
-{
-    /*
-     use a for loop to return the average of the numbers
-     entered from the user
-     */
-    int input, n, p = 0;
-    double averages = 0;
-    cout << "How many numbers would you like to enter?\n";
-    cin >> n;
-    for(int i = 0; i < n; i++)
-    {
-        cout << "Enter number\n";
-        cin >> input;
-        p += input;
-    }
-    averages = p/n;
-    cout << averages << endl;
-}
-void q2()
-{
-    /*
-     using a while loop, remove all spaces from a string from a the user and return the new string to the user
-     */
-    string input, edit;
-    int i = 0;
-    cout << "Enter\n";
-    getline(cin, input);
-    while(i < input.length())
-    {
-        if(input.at(i) != ' ')
-            edit += input.at(i);
-        i++;
-    }
-    cout << edit << endl;
-}
-void q3()
-{
-    /*
-     using a do-while loop, take in names from the user until 'x' is inputed and return the last letter of each name comma seperated
-     */
-    string input, edit;
-    do{
-        cout << "Enter\n";
-        getline(cin, input);
-        if(input != "x")
-            edit = edit + input.at(input.length() - 1) + ", ";
-    }while(input != "x");
-    cout << edit << endl;
-}
-int main()
-{
-    q1();
-    q2();
-    q3();
+//How is an instance of an array made?
+
+//An array is automatically passed by _____.
+
+//Can an array be returned from a function? Why, why not?
+
+//When creating a function for an array, what should be passed?
+
+//Why do we pass an array to a function this way?
+
+int main() {
+//Create an intance of an array called myArr of type int with size 6
+
+//Input the numbers 1,3,4,2,6,0 to myArr
+
+//Change the 4th number to 9 and the second number to 8 in myArray
+
+//Create another instance of an int array and fill it with the numbers 10,9,8,7,6
+
+//Create a function called fillArray that fills the numbers 1 though 10
+
+//Create a function called printArr and print arr and arr1
+
     return 0;
 }
